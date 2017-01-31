@@ -3,8 +3,16 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
-
+  sum = 0
+  array.sort!
+  numbers_in_the_array= array[0]..array[1]
+  numbers_in_the_array.each do |number|
+    sum = sum + number
+  end
+  return sum
 end
+
+
 
 # Driver code - don't touch anything below this line.
 puts "TESTING sum_of_range..."

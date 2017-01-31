@@ -4,6 +4,13 @@
 
 def mutation?(base_word, mutation)
 
+other_mutation = mutation.split("")
+other_base_word = base_word.split("") 
+if other_mutation.all?{ |letter| other_base_word.include?(letter)}
+  return true 
+  else 
+  return false  
+  end 
 end
 
 # Driver code - don't touch anything below this line.
